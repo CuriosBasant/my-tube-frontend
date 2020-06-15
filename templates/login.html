@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After Login Page</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,400i,700,700i&display=swap" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <header class="sticky-top bg-light">
+      <div class="container-fluid d-flex flex-column flex-md-row align-items-center px-3 py-2">
+        <button class="btn shadow-none">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="/" class="my-0 ml-4 text-decoration-none fa-lg">
+          <i class="fab fa-youtube fa-lg text-danger"></i>
+          <span class="font-weight-bolder text-dark"> MyTube </span>
+        </a>
+
+        <form class="form-inline m-md-auto">
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control header-search-bar" placeholder="Search" name="searchQuery">
+            <div type="submit" class="input-group-append">
+              <span class="input-group-text ">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </form>
+
+        <div class="flex-row my-3 my-md-0">
+          <a href="#" class="mr-3 text-dark">
+            <i class="fas fa-video fa-lg"></i>
+          </a>
+          <div class="btn-group">
+            <button class="btn mr-3 border-0 shadow-none text-dark" data-toggle="dropdown">
+              <i class="fas fa-bell fa-lg"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right shadow custom-scrollbar" id="notification-container">
+              <div class="dropdown-header">Notifications
+                <a href="#" class="text-right"><i class="fa fa-cog fa-lg"></i></a>
+              </div>
+              <div class="d-flex dropdown-item mb-3">
+                <a href="#">
+                  <img class="small-header-avatar rounded-circle" src="https://gravatar.com/avatar/b9408a09298632b5151200f3449434ef?s=128" />
+                </a>
+                <div class="flex-grow-1 mx-2">
+                  <a class="d-block text-wrap notification-title-text" link="#">Someone liked your Comment Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+                  <small>2 days ago</small>
+                </div>
+                <div class="align-self-start px-5 py-4 bg-secondary"></div>
+                <div class="dropdown ml-2 mr-n2">
+                  <button class="btn border-0 p-0 shadow-none text-muted" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"> Don't Show </a>
+                    <a class="dropdown-item" href="#"> Download </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="mr-2">
+            <img class="small-header-avatar rounded-circle" src="https://gravatar.com/avatar/b9408a09298632b5151200f3449434ef?s=128" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="row" style="margin: auto">
+      <!-- Main Content -->
+      <div class="col main-content">
+        <div class="py-2 my-3 border border-left-0 border-right-0">
+          <button class="border mx-1 p-2 badge badge-pill badge-secondary">All recommendations</button>
+          <button class="border mx-1 p-2 badge badge-pill text-secondary">Minecraft</button>
+          <button class="border mx-1 p-2 badge badge-pill text-secondary">Web Series</button>
+          <button class="border mx-1 p-2 badge badge-pill text-secondary">Javascript</button>
+          <button class="border mx-1 p-2 badge badge-pill text-secondary">Mods</button>
+          <button class="border mx-1 p-2 badge badge-pill text-secondary">Programming</button>
+        </div>
+        <div class="row" id="video-list">
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-3">
+            <div class="video-thumbnail position-relative">
+              <div class=" h-100 bg-secondary"></div>
+              <span class="position-absolute m-1" style="right: 0; top: 0;">
+                <i class="fa fa-clock"></i>
+                <i class="fa fa-indent"></i>
+              </span>
+              <span class="position-absolute m-1 badge badge-dark" style="right: 0; bottom: 0;">9:54</span>
+            </div>
+            <div class="d-flex my-2">
+              <img class="small-header-avatar rounded-circle" src="https://gravatar.com/avatar/b9408a09298632b5151200f3449434ef?s=128" />
+              <div class=" flex-grow-1 px-2">
+                <a href="#" class="text-dark">20 Builds for Minecraft Houses!</a>
+                <a href="#" class="text-muted d-block m-0"><small>Mumbo Jumbo </small> <i class="fa fa-check-circle fa-xs"></i></a>
+                <small class="text-muted">1.2M Views | 2 years ago</small>
+              </div>
+              <div class="dropdown align-self-start mr-2">
+                <button class="btn border-0 p-0 shadow-none text-muted" data-toggle="dropdown">
+                  <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"> <i class="fa fa-heart mr-2"></i> Add to Favourite </a>
+                  <a class="dropdown-item" href="#"> <i class="fa fa-download mr-2"></i> Download </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="side-bar custom-scrollbar position-fixed active">
+        <div class="list-group list-group-flush">
+          <a link="#" class="list-group-item list-group-item-action active"><i class="fa fa-home mr-2"></i> Home</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-fire mr-2"></i> Trending</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-film mr-2"></i> Library</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-history mr-2"></i> History</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-clock mr-2"></i> Watch Later</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-thumbs-up mr-2"></i> Liked Videos</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-cog mr-2"></i> Settings</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-exclamation-circle mr-2"></i> Send
+            Feedback</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-flag mr-2"></i> Report Bug</a>
+          <a link="#" class="list-group-item list-group-item-action"><i class="fa fa-question-circle mr-2"></i> Help</a>
+        </div>
+        <div class="container">
+          <a class="text-muted pr-2" href="#">About</a>
+          <a class="text-muted pr-2" href="#">Copyright</a>
+          <a class="text-muted pr-2" href="#">Contact Us</a>
+          <a class="text-muted pr-2" href="#">Advertise</a>
+          <a class="text-muted pr-2" href="#">Developers</a>
+        </div>
+        &copy; 2020 MyTube LLC
+      </div>
+
+    </div>
+    <script>
+      const videoFeeds = document.getElementById( 'video-list' );
+      for ( let i = 0; i < 20; i++ ) {
+        videoFeeds.appendChild( videoFeeds.firstElementChild.cloneNode( true ) );
+      }
+      const notifications = document.getElementById( 'notification-container' );
+      for ( let i = 0; i < 10; i++ ) {
+        notifications.appendChild( notifications.lastElementChild.cloneNode( true ) );
+      }
+    </script>
+</body>
+
+</html>
